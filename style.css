@@ -131,14 +131,16 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     box-shadow: 0 0 25px solid #2196f3;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.3s ease;
 }
 
 .home-img img:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+    transform: scale(1.05);
 }
