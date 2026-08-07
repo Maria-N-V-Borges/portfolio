@@ -196,10 +196,11 @@ span{
 
 .typing-text span{
     position: relative;
+    white-space: nowrap;
 }
 
 .typing-text span::before{
-    content: "Computer Science Student";
+    content: "CS Student";
     color: #2196f3;
     animation: words 20s infinite;
 }
@@ -223,16 +224,16 @@ span{
 
 @keyframes words {
     0%, 20%{
-        content: "Computer Science Student";
+        content: "CS Student";
     }
     21%, 40%{
-        content: "Software Engineer Student";
-    }
-    41%, 60%{
         content: "Game Developer";
     }
-    61%, 80%{
+    41%, 60%{
         content: "Frontend Developer";
+    }
+    61%, 80%{
+        content: "2D Artist";
     }
     81%, 100%{
         content: "3D Artist";
