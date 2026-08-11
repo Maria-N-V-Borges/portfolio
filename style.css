@@ -67,7 +67,8 @@ nav a:active{
 @media(max-width:995px){
     nav{
         position: absolute;
-        top: 100%;
+        display: none;
+        top: 0;
         right: 0;
         width: 40%;
         border-left: 3px solid #2196f3;
@@ -107,6 +108,7 @@ section{
     align-items: center;
     gap: 8rem;
     background-color: black;
+    padding-top: 10rem;
 }
 
 .home .home-content h1{
@@ -125,6 +127,10 @@ span{
     font-weight: 700;
 }
 
+.home-content p{
+    font-size: 1.7rem;
+}
+
 .home-img{
     border-radius: 50%;
 }
@@ -136,7 +142,7 @@ span{
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    box-shadow: 0 0 25px solid #2196f3;
+    box-shadow: 0 0 25px #2196f3;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -157,7 +163,7 @@ span{
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #ffffff;
+    color: #2196f3;
 }
 
 .social-icons a:hover{
@@ -212,7 +218,7 @@ span{
     width: calc(100% + 8px);
     height: 100%;
     border-left: 3px solid black;
-    right: -8;
+    right: 0;
     animation: cursor 0.6s infinite;
 }
 
@@ -237,5 +243,31 @@ span{
     }
     81%, 100%{
         content: "3D Artist";
+    }
+}
+
+@media(max-width: 1000px){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width: 995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home.home-content h3{
+        font-size: 2.5rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img img{
+        width: 70vh;
+        margin-top: 4rem;
     }
 }
