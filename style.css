@@ -221,7 +221,7 @@ span{
         margin: 5rem 4rem;
     }
 
-    .home.home-content h3{
+    .home .home-content h3{
         font-size: 2.5rem;
     }
 
@@ -230,7 +230,14 @@ span{
     }
 
     .home-img img{
-        width: 70vh;
-        margin-top: 4rem;
+        position: relative;
+        width: min(30rem, 80vw);
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        box-shadow: 0 0 25px #2196f3;
+        cursor: pointer;
+        transition: 0.3s ease;
     }
 }
