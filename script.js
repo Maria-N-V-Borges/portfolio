@@ -11,3 +11,10 @@ const typed = new Typed('.multiple-text',{
     backDelay: 1000,
     loop: true
 });
+
+const menuIcon = document.getElementById('menu-icon');
+const nav = document.querySelector('nav');
+
+menuIcon.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});

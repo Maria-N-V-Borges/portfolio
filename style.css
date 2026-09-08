@@ -240,6 +240,13 @@ span{
     color: var(--primary-color);
 }
 
+/* Menu Icon */
+#menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
 /* ========================================
    15. RESPONSIVE DESIGN
 ======================================== */
@@ -313,5 +320,9 @@ span{
 
     .home-img img{
        margin-top: 4rem;
+    }
+
+    #menu-icon {
+        display: block;
     }
 }
