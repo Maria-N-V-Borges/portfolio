@@ -240,6 +240,15 @@ span{
     color: var(--primary-color);
 }
 
+/* Menu Icon */
+#menu-icon {
+    display: none;
+    font-size: 3rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    z-index: 101;
+}
 /* ========================================
    15. RESPONSIVE DESIGN
 ======================================== */
@@ -261,13 +270,13 @@ span{
     nav{
         position: absolute;
         display: none;
-        top: 0;
+        top: 100%;
         right: 0;
         width: 40%;
         border-left: 3px solid var(--primary-color);
         border-bottom: 3px solid var(--primary-color);
         border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
+        padding: 1rem;
         background-color: var(--nav-background);
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
@@ -313,5 +322,11 @@ span{
 
     .home-img img{
        margin-top: 4rem;
+    }
+
+    /* Menu Icon */
+    
+    #menu-icon {
+        display: block;
     }
 }
