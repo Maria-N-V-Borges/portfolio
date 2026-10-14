@@ -381,7 +381,7 @@ span{
 }
 
 .service-info i {
-    font-family: 4rem;
+    font-size: 4rem;
     color: var(--primary-color);
     margin-bottom: 2rem;
 }
