@@ -334,8 +334,8 @@ span{
 ======================================== */
 
 .services {
-    background-color: var(--background-color);
-    padding: 10rem 9% 5rem;
+    background-color: #05070d;
+    padding: 7rem 9% 5rem;
 }
 
 .heading {
