@@ -423,3 +423,134 @@ span{
         padding: 2.5rem 2rem;
     }
 }
+
+/* ========================================
+   19. SKILLS SECTION
+======================================== */
+
+.skills {
+    background-color: #05070d;
+    padding: 10rem 9% 5rem;
+    scroll-margin-top: 8rem;
+}
+
+/* ========================================
+   20.SKILLS INTRODUCTION
+======================================== */
+
+.skills .heading {
+    margin-bottom: 2rem;
+}
+
+.skills-intro {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* ========================================
+   21. SKILLS CONTAINER
+======================================== */
+
+.skills-coitainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+}
+
+/* ========================================
+  22. SKILLS CARDS
+======================================== */
+
+.skills-box {
+    background-color: #161616;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px var(--primary-color);
+}
+
+/* ========================================
+   23. SKILLS ICONS
+======================================== */
+
+.skills-info i  {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+/* ========================================
+   24. SKILLS TITLES
+======================================== */
+
+.skills-info h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ========================================
+   25. SKILLS TAGS
+======================================== */
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.skills-list span {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 2rem;
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.skills-list span:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
+/* ========================================
+   26. SKILLS RESPONSIVE DESIGN
+======================================== */
+
+/* Tablets */
+
+@media (max-width: 1000px){
+    .skills-coitainer {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .skills {
+        padding: 8rem 5% 4rem;
+    }
+
+    .skills-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 2rem;
+    }
+
+    .skills-info h3 {
+        font-size: 2rem;
+    }
+}
